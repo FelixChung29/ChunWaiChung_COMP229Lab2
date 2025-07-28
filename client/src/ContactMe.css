@@ -1,0 +1,95 @@
+.contact-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-subtitle {
+  letter-spacing: 4px;
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 180px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card i {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ff8800;
+}
+
+.card span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row input,
+.contact-form textarea {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #ff9900, #ffcc00);
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gradient-button:hover {
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.3);
+  transform: translateY(-2px);
+}

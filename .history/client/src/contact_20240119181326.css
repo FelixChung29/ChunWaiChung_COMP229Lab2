@@ -1,0 +1,26 @@
+#ffp{
+ 
+
+
+    
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+   
+}
+
+label{
+    font-size:xx-large;
+    font-size: x-large;
+}
+
+input{
+    font-size: larger;
+}
+
+.submit{
+    font-size:x-large;
+}

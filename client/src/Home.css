@@ -1,0 +1,59 @@
+.home-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-side {
+  flex: 0 0 0;
+  background-color: black;
+}
+
+.home-center {
+  flex: 0 0 100%; 
+}
+
+.home-content {
+  background: none;
+  margin-top: -130px;
+  padding: 20px;
+  border-radius: 0;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.home-content h1,
+.home-content h3,
+.home-content p {
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.home-content h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.home-content h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+  cursor: pointer;
+}
