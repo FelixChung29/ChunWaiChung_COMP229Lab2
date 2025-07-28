@@ -1,6 +1,6 @@
 import app from './server/express.js';
 import mongoose from 'mongoose';
-import config from './config/config.js';  // 注意路径
+import config from './config/config.js';  
 
 mongoose.connect(config.mongoUri, {
   useNewUrlParser: true,

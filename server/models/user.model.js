@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-//const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
  name: {
  type: String,
@@ -30,9 +29,7 @@ required: 'Password is required'
 UserSchema.virtual('password')
  .set(function(password) {
  this._password = password;
-//this.salt = this.makeSalt();
 this.hashed_password = password;
-//this.hashed_password = this.encryptPassword(password);
 })
 .get(function() {
 return this._password;
@@ -45,6 +42,5 @@ UserSchema.path('hashed_password').validate(function(v) {
 this.invalidate('password', 'Password is required');
  }
 }, null);
-//module.exports = mongoose.model('User', UserSchema);
 export default mongoose.model('User', UserSchema);
 

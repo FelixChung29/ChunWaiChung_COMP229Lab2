@@ -2,7 +2,6 @@ import Contact from '../models/contact.model.js';
 import extend from 'lodash/extend.js';
 import errorHandler from './error.controller.js';
 
-// ✅ Create contact
 const create = async (req, res) => {
   const contact = new Contact(req.body);
   try {
@@ -18,7 +17,6 @@ const create = async (req, res) => {
   }
 };
 
-// ✅ List all contacts
 const list = async (req, res) => {
   try {
     const contacts = await Contact.find().select('firstname lastname email message created');
@@ -30,7 +28,6 @@ const list = async (req, res) => {
   }
 };
 
-// ✅ Middleware: Load contact by ID
 const contactByID = async (req, res, next, id) => {
   try {
     const contact = await Contact.findById(id);
@@ -48,12 +45,10 @@ const contactByID = async (req, res, next, id) => {
   }
 };
 
-// ✅ Read a specific contact (via req.contact)
 const read = (req, res) => {
   return res.json(req.contact);
 };
 
-// ✅ Update contact
 const update = async (req, res) => {
   try {
     let contact = req.contact;
@@ -71,7 +66,6 @@ const update = async (req, res) => {
   }
 };
 
-// ✅ Delete contact
 const remove = async (req, res) => {
   try {
     const deletedContact = await req.contact.deleteOne();
@@ -86,7 +80,6 @@ const remove = async (req, res) => {
   }
 };
 
-// ✅ Export all controller methods
 export default {
   create,
   list,

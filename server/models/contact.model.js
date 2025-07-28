@@ -20,7 +20,7 @@ const ContactSchema = new mongoose.Schema({
   },
 
 }, {
-  timestamps: true  // 自动添加 createdAt 和 updatedAt
+  timestamps: true
 });
 
 export default mongoose.model('Contact', ContactSchema);
